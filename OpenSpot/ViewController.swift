@@ -33,7 +33,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     {
         let location = locations[0]
         
-       
+       //print(location.coordinate.latitude)
         
     }
     override func viewDidLoad() {
@@ -51,7 +51,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         let car = CLLocationCoordinate2D(latitude:30.175749, longitude:-81.621910)
 
         
-        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.0001 ,0.0001)
+        let span:MKCoordinateSpan = MKCoordinateSpanMake(0.00001 ,0.00001)
         
 //        let myLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
        let myLocation:CLLocationCoordinate2D = point1
@@ -71,6 +71,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         map.addAnnotation(pin3)
         map.addAnnotation(pin4)
         map.addAnnotation(carpin)
+        
+//comment test
 
 //        print("vert acc: ", location.verticalAccuracy)
 //        print("vert acc: ", location.horizontalAccuracy)
